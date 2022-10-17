@@ -1,0 +1,23 @@
+{
+  "name": "klizaliste",
+  "version": "1.0.0",
+  "description": "Stranica koja ce opisati usluge klizalista",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/stylesheet.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBesednik/Skating-rink.git"
+  },
+  "author": "Mateo Besednik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBesednik/Skating-rink/issues"
+  },
+  "homepage": "https://github.com/MBesednik/Skating-rink#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
