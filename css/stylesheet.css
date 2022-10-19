@@ -23,6 +23,9 @@
   --clr-grey-10: hsl(210, 36%, 96%);
   /* Basic colors */
   --clr-white: #fff;
+  /* Spacing */
+  --spacing: 0.2rem;
+  --mini-spacing: 0.11rem;
   /* Shadows*/
   --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   --box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
@@ -56,6 +59,52 @@ section {
   color: var(--clr-grey-3);
   padding: 35px 200px;
   transition: 0.3s ease; }
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary); }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 1rem; }
+
+p {
+  letter-spacing: var(--mini-spacing);
+  line-height: 1.5; }
+
+ul {
+  letter-spacing: var(--mini-spacing);
+  line-height: 1.5; }
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem; }
+  h2 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 1.75rem; }
+  h4 {
+    font-size: 1rem; }
+  body {
+    font-size: 1rem; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1; } }
 
 ::-webkit-scrollbar {
   width: 10px; }
@@ -188,10 +237,10 @@ header .nav-bar {
   font-size: 0.3em;
   font-weight: 300; }
 
-.swiper-slide .text-content p {
-  max-width: 700px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+.swiper-slide .text-content div {
+  max-width: 650px;
+  background: var(--white-color);
+  color: var(--clr-grey-4);
   text-shadow: var(--text-shadow);
   padding: 20px;
   border-radius: 10px;
@@ -201,7 +250,7 @@ header .nav-bar {
   transform: translateX(-80px);
   opacity: 0; }
 
-.swiper-slide-active .text-content p {
+.swiper-slide-active .text-content div {
   transform: translateX(0);
   opacity: 1;
   transition: 1s ease;
@@ -297,6 +346,18 @@ header .nav-bar {
 
 .about p {
   margin: 25px 0; }
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 2rem; }
+
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: #199fff;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*======= Media queries (max-width: 1100px) =======*/
 @media screen and (max-width: 1100px) {
