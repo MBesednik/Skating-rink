@@ -1,4 +1,4 @@
-//Swiper slider
+// Swiper slider
 var swiper = new Swiper('.bg-slider-thumbs', {
   loop: true,
   spaceBetween: 0,
@@ -12,7 +12,7 @@ var swiper2 = new Swiper('.bg-slider', {
   },
 });
 
-//Javacript for the scroll indicator bar
+// Javacript for the scroll indicator bar
 window.addEventListener('scroll', () => {
   const indicatorBar = document.querySelector('.scroll-indicator-bar');
 
@@ -26,7 +26,7 @@ window.addEventListener('scroll', () => {
   indicatorBar.style.width = scrollValue + '%';
 });
 
-//Responsive navigation menu toggle
+// Responsive navigation menu toggle
 const menuBtn = document.querySelector('.nav-menu-btn');
 const closeBtn = document.querySelector('.nav-close-btn');
 const navigation = document.querySelector('.navigation');

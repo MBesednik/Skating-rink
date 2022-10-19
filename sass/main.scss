@@ -1,8 +1,10 @@
 // abstracts
+@import './abstracts/variables.scss';
 
 // base
 
 // components
+@import './components/indicator.scss';
 @import './components/navigation.scss';
 @import './components/swiper.scss';
 
