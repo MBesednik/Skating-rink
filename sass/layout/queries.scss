@@ -46,15 +46,15 @@
     margin: 0 70px 0 20px;
   }
 
-  .swiper-slide .text-content .title {
+  .swiper-slide .text-content .big-title {
     font-size: 3em;
   }
 
-  .swiper-slide .text-content .title span {
+  .swiper-slide .text-content .big-title span {
     font-size: 0.35em;
   }
 
-  .swiper-slide .text-content p {
+  .swiper-slide .text-content div p {
     font-size: 0.9em;
   }
 
@@ -139,6 +139,7 @@
   .swiper-slide .text-content .read-btn {
     font-size: 0.9em;
     padding: 5px 15px;
+    margin-top: 30px;
   }
 
   /*======= About section =======*/

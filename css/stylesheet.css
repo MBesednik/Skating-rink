@@ -339,7 +339,6 @@ header .nav-bar {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 10px 3px;
-  margin-bottom: 10px;
   border-radius: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -416,11 +415,11 @@ header .nav-bar {
     font-size: 1.5em; }
   .swiper-slide .text-content {
     margin: 0 70px 0 20px; }
-  .swiper-slide .text-content .title {
+  .swiper-slide .text-content .big-title {
     font-size: 3em; }
-  .swiper-slide .text-content .title span {
+  .swiper-slide .text-content .big-title span {
     font-size: 0.35em; }
-  .swiper-slide .text-content p {
+  .swiper-slide .text-content div p {
     font-size: 0.9em; }
   /*======= Navigation menu =======*/
   .nav-menu-btn {
@@ -483,7 +482,8 @@ header .nav-bar {
     margin-right: 5px; }
   .swiper-slide .text-content .read-btn {
     font-size: 0.9em;
-    padding: 5px 15px; }
+    padding: 5px 15px;
+    margin-top: 30px; }
   /*======= About section =======*/
   .about h2 {
     font-size: 2.5em; }
