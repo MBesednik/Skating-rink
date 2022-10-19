@@ -109,7 +109,7 @@
   transition: 0.3s ease;
 }
 
-.swiper-slide .text-content .title {
+.swiper-slide .text-content .big-title {
   font-size: 4em;
   font-weight: 700;
   text-shadow: var(--text-shadow);
@@ -118,7 +118,7 @@
   opacity: 0;
 }
 
-.swiper-slide-active .text-content .title {
+.swiper-slide-active .text-content .big-title {
   transform: translateY(0);
   opacity: 1;
   transition: 1s ease;
@@ -126,7 +126,7 @@
   transition-property: transform, opacity;
 }
 
-.swiper-slide .text-content .title span {
+.swiper-slide .text-content .big-title span {
   font-size: 0.3em;
   font-weight: 300;
 }
