@@ -2,6 +2,7 @@
 @import './abstracts/variables.scss';
 
 // base
+@import './base/global.scss';
 
 // components
 @import './components/indicator.scss';
@@ -11,4 +12,5 @@
 // layout
 @import './layout/queries.scss';
 
-// pages
+// pages¸
+@import './pages/home.scss';

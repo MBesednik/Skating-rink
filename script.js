@@ -38,3 +38,25 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   navigation.classList.remove('active');
 });
+
+// ********** fixed navbar ************
+
+const navbar = document.getElementById('nav');
+const topLink = document.querySelector('.top-link');
+
+window.addEventListener('scroll', function () {
+  const scrollHeight = window.pageYOffset;
+  const navHeight = navbar.getBoundingClientRect().height;
+  if (scrollHeight > navHeight) {
+    navbar.classList.add('fixed-nav');
+  } else {
+    navbar.classList.remove('fixed-nav');
+  }
+  // setup back to top link
+
+  if (scrollHeight > 500) {
+    topLink.classList.add('show-link');
+  } else {
+    topLink.classList.remove('show-link');
+  }
+});

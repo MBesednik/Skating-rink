@@ -48,3 +48,46 @@ header .nav-bar {
 .nav-menu-btn {
   display: none;
 }
+
+// Fixed nav
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white-color);
+  box-shadow: var(--light-shadow);
+  z-index: 2;
+}
+
+.fixed-nav .logo {
+  color: var(--clr-grey-3);
+}
+
+.fixed-nav .nav-items a {
+  color: var(--clr-grey-3);
+}
+.fixed-nav .nav-menu-btn {
+  color: var(--clr-grey-3);
+}
+
+// .fixed-nav {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   background: var(--clr-white);
+//   box-shadow: var(--light-shadow);
+//   z-index: 2;
+// }
+// .fixed-nav .logo {
+//   color: var(--clr-grey-1);
+// }
+
+// .fixed-nav .links a {
+//   color: var(--clr-grey-1);
+// }
+// .fixed-nav .links a:hover {
+//   color: var(--clr-green-dark);
+// }
