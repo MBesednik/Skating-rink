@@ -30,12 +30,25 @@
         <div class="navigation">
           <div class="nav-items">
             <i class="uil uil-times nav-close-btn"></i>
-            <a href="#"><i class="uil uil-home"></i> Početna</a>
-            <a href="#about"><i class="uil uil-info-circle"></i> O nama</a>
-            <a href="#service"><i class="uil uil-compass"></i> Usluge</a>
-            <a href="#rink"><i class="uil uil-snowflake"></i> Klizališta</a>
-            <a href="#"><i class="uil uil-document-layout-left"></i> Mediji</a>
-            <a href="#"><i class="uil uil-envelope"></i> Kontakt</a>
+            <a href="#" class="homePageBtn"
+              ><i class="uil uil-home" onclick="close()"></i> Početna</a
+            >
+            <a href="#about" class="aboutBtn"
+              ><i class="uil uil-info-circle" onclick="close()"></i> O nama</a
+            >
+            <a href="#service" class="serviceBtn"
+              ><i class="uil uil-compass" onclick="close()"></i> Usluge</a
+            >
+            <a href="#rink" class="rinkBtn"
+              ><i class="uil uil-snowflake" onclick="close()"></i> Klizališta</a
+            >
+            <a href="#" class="mediaBtn"
+              ><i class="uil uil-document-layout-left" onclick="close()"></i>
+              Mediji</a
+            >
+            <a href="#" class="contactBtn"
+              ><i class="uil uil-envelope" onclick="close()"></i> Kontakt</a
+            >
           </div>
         </div>
 
@@ -327,7 +340,7 @@
     </footer>
 
     <!-- Button to to top -->
-    <a class="scroll-link top-link" href="#home">
+    <a class="scroll-link top-link" href="#">
       <!-- <i class="fas fa-arrow-up"></i> -->
       <i class="uil uil-arrow-up"></i>
     </a>
@@ -338,6 +351,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/slider-bundle/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./script.js">
+      let nav = document.getElementsByClassName('navigation');
+      function close() {
+        navigation.classList.remove('active');
+        console.log(close())
+      }
+    </script>
   </body>
 </html>

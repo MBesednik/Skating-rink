@@ -30,12 +30,35 @@ window.addEventListener('scroll', () => {
 const menuBtn = document.querySelector('.nav-menu-btn');
 const closeBtn = document.querySelector('.nav-close-btn');
 const navigation = document.querySelector('.navigation');
+const homePageBtn = document.querySelector('.homePageBtn');
+const aboutBtn = document.querySelector('.aboutBtn');
+const serviceBtn = document.querySelector('.serviceBtn');
+const rinkBtn = document.querySelector('.rinkBtn');
+const mediaBtn = document.querySelector('.mediaBtn');
+const contactBtn = document.querySelector('.contactBtn');
 
 menuBtn.addEventListener('click', () => {
   navigation.classList.add('active');
 });
-
 closeBtn.addEventListener('click', () => {
+  navigation.classList.remove('active');
+});
+homePageBtn.addEventListener('click', () => {
+  navigation.classList.remove('active');
+});
+aboutBtn.addEventListener('click', () => {
+  navigation.classList.remove('active');
+});
+serviceBtn.addEventListener('click', () => {
+  navigation.classList.remove('active');
+});
+rinkBtn.addEventListener('click', () => {
+  navigation.classList.remove('active');
+});
+mediaBtn.addEventListener('click', () => {
+  navigation.classList.remove('active');
+});
+contactBtn.addEventListener('click', () => {
   navigation.classList.remove('active');
 });
 
