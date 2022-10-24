@@ -133,10 +133,11 @@
 
 .swiper-slide .text-content div {
   max-width: 650px;
-  // background: rgba(255, 255, 255, 0.3);
-  background: var(--white-color);
-  color: var(--clr-grey-4);
-  // backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.3);
+  // background: var(--white-color);
+  // color: var(--clr-grey-4);
+  color: #fff;
+  backdrop-filter: blur(20px);
   text-shadow: var(--text-shadow);
   padding: 20px;
   border-radius: 10px;
