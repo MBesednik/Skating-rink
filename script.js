@@ -52,13 +52,14 @@ window.addEventListener('scroll', function () {
   } else {
     navbar.classList.remove('fixed-nav');
   }
+
   // setup back to top link
 
-  // if (scrollHeight > 500) {
-  //   topLink.classList.add('show-link');
-  // } else {
-  //   topLink.classList.remove('show-link');
-  // }
+  if (scrollHeight > 500) {
+    topLink.classList.add('show-link');
+  } else {
+    topLink.classList.remove('show-link');
+  }
 });
 
 // Cards slider
