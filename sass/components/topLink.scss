@@ -13,6 +13,10 @@
   animation: bounce 2s ease-in-out infinite;
   visibility: hidden;
   z-index: -100;
+
+  i {
+    font-size: 1.3rem;
+  }
 }
 .show-link {
   visibility: visible;

@@ -603,6 +603,8 @@ header .nav-bar {
   animation: bounce 2s ease-in-out infinite;
   visibility: hidden;
   z-index: -100; }
+  .top-link i {
+    font-size: 1.3rem; }
 
 .show-link {
   visibility: visible;
@@ -749,7 +751,7 @@ section {
   .nav-menu-btn {
     display: block;
     color: var(--white-color);
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer; }
   .nav-close-btn {
     display: block;
@@ -757,8 +759,8 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 1.3em;
-    margin: 10px;
+    font-size: 1.8em;
+    margin: 13px;
     cursor: pointer;
     transition: 0.3s ease; }
   .navigation {
