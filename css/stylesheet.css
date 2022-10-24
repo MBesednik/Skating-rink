@@ -52,14 +52,6 @@ html {
   font-family: var(--ff-primary); }
 
 /*======= Main CSS =======*/
-section {
-  position: relative; }
-
-.section {
-  color: var(--clr-grey-3);
-  padding: 35px 200px;
-  transition: 0.3s ease; }
-
 h1,
 h2,
 h3,
@@ -348,6 +340,68 @@ header .nav-bar {
 
 .fixed-nav .nav-menu-btn {
   color: var(--clr-grey-3); }
+
+section {
+  position: relative; }
+
+.section {
+  color: var(--clr-grey-3);
+  padding: 35px 200px;
+  transition: 0.3s ease; }
+
+.about-container {
+  display: flex;
+  justify-content: center; }
+  .about-container__text {
+    width: 45%; }
+  .about-container__composition {
+    width: 55%;
+    text-align: center; }
+    .about-container__composition__photo {
+      width: 300px;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+      border-radius: 4px;
+      position: relative;
+      z-index: 10;
+      transition: all 0.2s;
+      outline-offset: 2rem; }
+      .about-container__composition__photo--p1 {
+        left: 0;
+        top: 2rem; }
+      .about-container__composition__photo--p2 {
+        right: -2rem;
+        top: -2rem; }
+      .about-container__composition__photo:hover {
+        transform: scale(1.05) translateY(-0.5rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20; }
+      .about-container__composition__photo:hover .about-container__composition__photo__photo:not(:hover) {
+        transform: scale(0.95); }
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .about-container__text {
+      width: 100%; }
+    .about-container__composition {
+      width: 100%;
+      text-align: center; }
+      .about-container__composition__photo {
+        width: 150px;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        position: relative;
+        z-index: 10;
+        transition: all 0.2s;
+        outline-offset: 2rem; }
+        .about-container__composition__photo--p1 {
+          left: 1.5rem;
+          top: 1rem; }
+        .about-container__composition__photo--p2 {
+          right: 1.5rem;
+          top: 0; } }
 
 .snow,
 .snow:before,
