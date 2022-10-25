@@ -216,7 +216,7 @@ header .nav-bar-relative {
 
 .nav-bar .logo {
   color: #fff;
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -757,6 +757,8 @@ header .nav-bar-relative {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .footer-container h3 {
+      text-transform: uppercase; }
     .footer-container a {
       color: #fff;
       text-decoration: none;
