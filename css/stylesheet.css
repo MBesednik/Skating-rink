@@ -262,7 +262,7 @@ header .nav-bar {
   transition: all 0.3s; }
   .popup__content {
     width: 90%;
-    height: auto;
+    min-height: 48vh;
     position: relative;
     top: 50%;
     left: 50%;
