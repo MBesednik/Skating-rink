@@ -99,3 +99,49 @@ var swiper = new Swiper('.blog-slider', {
     clickable: true,
   },
 });
+
+// Images container
+let bigImg = document.getElementById('big-img');
+let smallImg = document.getElementsByClassName('small-img');
+smallImg[0].onclick = function () {
+  bigImg.src = smallImg[0].src;
+};
+smallImg[1].onclick = function () {
+  bigImg.src = smallImg[1].src;
+};
+smallImg[2].onclick = function () {
+  bigImg.src = smallImg[2].src;
+};
+smallImg[3].onclick = function () {
+  bigImg.src = smallImg[3].src;
+};
+
+let secondBigImg = document.getElementById('second-big-img');
+let secondSmallImg = document.getElementsByClassName('second-small-img');
+secondSmallImg[0].onclick = function () {
+  secondBigImg.src = secondSmallImg[0].src;
+};
+secondSmallImg[1].onclick = function () {
+  secondBigImg.src = secondSmallImg[1].src;
+};
+secondSmallImg[2].onclick = function () {
+  secondBigImg.src = secondSmallImg[2].src;
+};
+secondSmallImg[3].onclick = function () {
+  secondBigImg.src = secondSmallImg[3].src;
+};
+
+let thirdBigImg = document.getElementById('third-big-img');
+let thirdSmallImg = document.getElementsByClassName('third-small-img');
+thirdSmallImg[0].onclick = function () {
+  thirdBigImg.src = thirdSmallImg[0].src;
+};
+thirdSmallImg[1].onclick = function () {
+  thirdBigImg.src = thirdSmallImg[1].src;
+};
+thirdSmallImg[2].onclick = function () {
+  thirdBigImg.src = thirdSmallImg[2].src;
+};
+thirdSmallImg[3].onclick = function () {
+  thirdBigImg.src = thirdSmallImg[3].src;
+};

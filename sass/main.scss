@@ -3,8 +3,10 @@
 
 // base
 @import './base/global.scss';
+@import './base/typography.scss';
 
 // components
+@import './components/imageContainer.scss';
 @import './components/indicator.scss';
 @import './components/navigation.scss';
 @import './components/popup.scss';

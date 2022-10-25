@@ -12,7 +12,7 @@
 
   &__content {
     width: 75%;
-    height: 20rem;
+    height: auto;
     position: relative;
     top: 50%;
     left: 50%;
@@ -40,7 +40,7 @@
   &__close {
     &:link,
     &:visited {
-      color: var(--dark-color);
+      color: #fff;
       position: absolute;
       top: 0.7rem;
       right: 1rem;
@@ -52,6 +52,12 @@
 
       &:hover {
         color: #199fff;
+      }
+    }
+    @media screen and (min-width: 915px) {
+      &:link,
+      &:visited {
+        color: var(--clr-grey-3);
       }
     }
   }
