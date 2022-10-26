@@ -206,7 +206,8 @@ ul {
   padding: 25px;
   border-radius: 25px;
   height: 400px;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  margin-bottom: 50px; }
   .media-container__img {
     width: 300px;
     flex-shrink: 0;
@@ -237,17 +238,6 @@ ul {
   .media-container__text {
     margin-bottom: 30px;
     line-height: 1.3rem; }
-  .media-container__button {
-    display: inline-flex;
-    background-image: linear-gradient(147deg, #8ed0ff 0%, #199fff 74%);
-    padding: 15px 35px;
-    border-radius: 50px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 1px; }
 
 @media screen and (max-width: 992px) {
   .media-container {
@@ -583,7 +573,11 @@ header .nav-bar-relative {
   font-weight: 500;
   justify-content: center;
   text-align: center;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  transition: all 0.4s; }
+  .blog-slider__button:hover {
+    width: 95%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets,
 .blog-slider .swiper-pagination-custom,
@@ -1005,6 +999,7 @@ section {
 
 .section {
   color: var(--clr-grey-3);
+  padding: 35px 150px;
   transition: 0.3s ease; }
 
 .about-container {

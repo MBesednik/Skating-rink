@@ -9,6 +9,7 @@
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
+  margin-bottom: 50px;
 
   &__img {
     width: 300px;
@@ -48,18 +49,6 @@
   &__text {
     margin-bottom: 30px;
     line-height: 1.3rem;
-  }
-  &__button {
-    display: inline-flex;
-    background-image: linear-gradient(147deg, #8ed0ff 0%, #199fff 74%);
-    padding: 15px 35px;
-    border-radius: 50px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 992px) {
