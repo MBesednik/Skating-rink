@@ -449,12 +449,17 @@ header .nav-bar-relative {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-        background-image: linear-gradient(147deg, #8ed0ff 0%, #199fff 80%); }
+        background-image: linear-gradient(147deg, #8ed0ff 0%, #199fff 80%);
+        border-radius: 7px;
+        clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
+        box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5); }
   @media screen and (max-width: 768px) {
     .service-container .service-container__card {
       display: inline-block;
       width: 100%;
-      margin: 1rem; } }
+      margin: 1rem; }
+      .service-container .service-container__card-span {
+        clip-path: none; } }
 
 .blog-slider {
   width: 95%;
