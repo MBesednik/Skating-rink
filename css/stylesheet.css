@@ -811,7 +811,7 @@ header .nav-bar-relative {
 .timeline {
   width: 100%;
   background: #fff;
-  padding: 100px 50px;
+  padding: 100px 35px;
   position: relative;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
   border-radius: 7px; }
@@ -844,11 +844,11 @@ header .nav-bar-relative {
       position: absolute;
       width: 8px;
       height: 8px;
-      border: 4px solid salmon;
+      border: 4px solid #199fff;
       background-color: #fff;
       border-radius: 100%;
       top: 15%;
-      right: -4px;
+      right: -9px;
       z-index: 99; }
     .entry .timeline-title h3 {
       margin: 0;
@@ -867,12 +867,52 @@ header .nav-bar-relative {
         margin-top: 0;
         font-weight: 400; }
     .entry .body ul {
-      color: #aaa;
+      color: var(--clr-grey-3);
       padding-left: 0;
       list-style-type: none; }
       .entry .body ul li:before {
-        content: '–';
-        margin-right: 0.5em; }
+        content: '– '; }
+
+#snowman {
+  width: 250px;
+  position: relative;
+  top: -27.5rem;
+  right: -45rem;
+  transition: all 500ms; }
+
+@media screen and (max-width: 1285px) {
+  #snowman {
+    right: -35rem; } }
+
+@media screen and (max-width: 915px) {
+  #snowman {
+    right: -30rem; } }
+
+@media screen and (max-width: 830px) {
+  #snowman {
+    width: 150px;
+    top: -25rem; } }
+
+@media screen and (max-width: 670px) {
+  #snowman {
+    right: -26rem; } }
+
+@media screen and (max-width: 620px) {
+  #snowman {
+    top: -15rem;
+    right: -20rem; } }
+
+@media screen and (max-width: 500px) {
+  #snowman {
+    width: 100px;
+    top: -10rem;
+    right: -17rem; } }
+
+@media screen and (max-width: 410px) {
+  #snowman {
+    width: 100px;
+    top: -8rem;
+    right: -13rem; } }
 
 .title {
   position: relative;
