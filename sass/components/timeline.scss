@@ -149,4 +149,11 @@ $dot-diameter: 8px;
     top: -8rem;
     right: -13rem;
   }
+
+  .timeline {
+    padding: 80px 20px;
+    .entry .timeline-title:before {
+      right: -14px;
+    }
+  }
 }

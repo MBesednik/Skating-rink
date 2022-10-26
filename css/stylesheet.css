@@ -912,7 +912,11 @@ header .nav-bar-relative {
   #snowman {
     width: 100px;
     top: -8rem;
-    right: -13rem; } }
+    right: -13rem; }
+  .timeline {
+    padding: 80px 20px; }
+    .timeline .entry .timeline-title:before {
+      right: -14px; } }
 
 .title {
   position: relative;
