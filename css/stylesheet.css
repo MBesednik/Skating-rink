@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*======= CSS variables =======*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 :root {
@@ -451,15 +452,12 @@ header .nav-bar-relative {
         box-decoration-break: clone;
         background-image: linear-gradient(147deg, #8ed0ff 0%, #199fff 80%);
         border-radius: 7px;
-        clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
-        box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5); }
+        clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%); }
   @media screen and (max-width: 768px) {
     .service-container .service-container__card {
       display: inline-block;
       width: 100%;
-      margin: 1rem; }
-      .service-container .service-container__card-span {
-        clip-path: none; } }
+      margin: 1rem; } }
 
 .blog-slider {
   width: 95%;
@@ -809,6 +807,72 @@ header .nav-bar-relative {
 
 .about p {
   margin: 25px 0; }
+
+.timeline {
+  width: 100%;
+  background: #fff;
+  padding: 100px 50px;
+  position: relative;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 7px; }
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: calc(33% + 15px);
+    bottom: 0px;
+    width: 4px;
+    background: #ddd; }
+  .timeline:after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative; }
+  .entry .timeline-title {
+    margin-bottom: 0.5em;
+    float: left;
+    width: 33%;
+    padding-right: 30px;
+    text-align: right;
+    position: relative; }
+    .entry .timeline-title:before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border: 4px solid salmon;
+      background-color: #fff;
+      border-radius: 100%;
+      top: 15%;
+      right: -4px;
+      z-index: 99; }
+    .entry .timeline-title h3 {
+      margin: 0;
+      font-size: 120%; }
+    .entry .timeline-title p {
+      margin: 0;
+      font-size: 100%; }
+  .entry .body {
+    margin: 0 0 3em;
+    float: right;
+    width: 66%;
+    padding-left: 30px; }
+    .entry .body p {
+      line-height: 1.4em; }
+      .entry .body p:first-child {
+        margin-top: 0;
+        font-weight: 400; }
+    .entry .body ul {
+      color: #aaa;
+      padding-left: 0;
+      list-style-type: none; }
+      .entry .body ul li:before {
+        content: '–';
+        margin-right: 0.5em; }
 
 .title {
   position: relative;
