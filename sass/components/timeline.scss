@@ -155,5 +155,8 @@ $dot-diameter: 8px;
     .entry .timeline-title:before {
       right: -14px;
     }
+    .entry .body ul li:before {
+      content: '';
+    }
   }
 }

@@ -916,7 +916,9 @@ header .nav-bar-relative {
   .timeline {
     padding: 80px 20px; }
     .timeline .entry .timeline-title:before {
-      right: -14px; } }
+      right: -14px; }
+    .timeline .entry .body ul li:before {
+      content: ''; } }
 
 .title {
   position: relative;
