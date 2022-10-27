@@ -214,3 +214,16 @@ section {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   }
 }
+
+.izrada {
+  background-color: red;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: #fff;
+    display: inline-block;
+  }
+}

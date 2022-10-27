@@ -694,7 +694,7 @@ header .nav-bar-relative {
   max-width: 650px;
   background: rgba(255, 255, 255, 0.3);
   color: #fff;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(1px);
   text-shadow: var(--text-shadow);
   padding: 20px;
   border-radius: 10px;
@@ -760,7 +760,7 @@ header .nav-bar-relative {
 
 .thumbs-container {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
   padding: 10px 3px;
   border-radius: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -1154,6 +1154,16 @@ section {
     margin-bottom: 15px;
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); } }
+
+.izrada {
+  background-color: red;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .izrada h1 {
+    color: #fff;
+    display: inline-block; }
 
 /*======= Media queries (max-width: 1100px) =======*/
 @media screen and (max-width: 1100px) {
