@@ -711,6 +711,9 @@ header .nav-bar-relative {
   transition-delay: 0.3s;
   transition-property: transform, opacity; }
 
+.swiper-slide .text-content .link__read-btn {
+  text-decoration: none; }
+
 .swiper-slide .text-content .read-btn {
   border: none;
   outline: none;
