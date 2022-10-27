@@ -574,7 +574,7 @@ header .nav-bar-relative {
   justify-content: center;
   text-align: center;
   letter-spacing: 1px;
-  transition: all 0.4s; }
+  transition: all 0.2s; }
   .blog-slider__button:hover {
     width: 95%;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
