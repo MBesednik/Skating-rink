@@ -6,6 +6,7 @@
 @import './base/typography.scss';
 
 // components
+@import './components/gallery.scss';
 @import './components/imageContainer.scss';
 @import './components/indicator.scss';
 @import './components/mediaContainer.scss';
@@ -26,3 +27,4 @@
 
 // pages
 @import './pages/home.scss';
+@import './pages/rink.scss';
