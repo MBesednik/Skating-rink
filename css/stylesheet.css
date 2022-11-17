@@ -134,7 +134,7 @@ ul {
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
-  gap: 2rem; }
+  gap: 1rem; }
 
 @media screen and (min-width: 768px) {
   .section-gallery {
@@ -156,7 +156,7 @@ ul {
   object-fit: cover;
   border-radius: var(--radius);
   cursor: pointer;
-  transition: var(--transition);
+  transition: all 0.2s linear;
   box-shadow: var(--light-shadow);
   height: 15rem; }
 
@@ -194,6 +194,10 @@ Modal
   color: var(--clr-white);
   background: transparent;
   border-color: transparent;
+  transition: all 0.2s linear; }
+
+.close-btn:hover {
+  color: #199fff;
   cursor: pointer; }
 
 .next-btn,
@@ -245,7 +249,7 @@ Modal
   width: 100%;
   height: 5rem;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: var(--transition);
   cursor: pointer; }
 
