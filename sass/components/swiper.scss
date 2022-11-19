@@ -199,7 +199,13 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.55);
+  background: linear-gradient(
+    60deg,
+    rgba(2, 0, 36, 0.75) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(25, 159, 255, 0.15) 100%
+  );
 }
 
 .bg-slider-thumbs {

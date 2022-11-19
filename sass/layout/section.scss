@@ -227,3 +227,26 @@ section {
     display: inline-block;
   }
 }
+
+// about section
+section#about.about.section {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+// service section
+section#service.service.section {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+section.service-section {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+section.section.section-timeline {
+  max-height: 700px;
+  margin: 0 auto;
+  max-width: 1470px;
+}

@@ -32,6 +32,11 @@
   --box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --max-width: 1170px;
+  --fixed-width: 620px;
   --scroll-bar-color: #fff;
   --scroll-thumb-color: #282f4e;
   --scroll-thumb-hover-color: #454f6b; }
@@ -887,7 +892,8 @@ header .nav-bar-relative {
   height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.55);
+  background: linear-gradient(60deg, rgba(2, 0, 36, 0.75) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(25, 159, 255, 0.15) 100%); }
 
 .bg-slider-thumbs {
   z-index: 777;
@@ -941,6 +947,7 @@ header .nav-bar-relative {
 
 .timeline {
   width: 100%;
+  max-width: 1170px;
   background: #fff;
   padding: 100px 35px;
   position: relative;
@@ -1303,6 +1310,23 @@ section {
   .izrada h1 {
     color: #fff;
     display: inline-block; }
+
+section#about.about.section {
+  margin: 0 auto;
+  max-width: 1170px; }
+
+section#service.service.section {
+  margin: 0 auto;
+  max-width: 1170px; }
+
+section.service-section {
+  margin: 0 auto;
+  max-width: 1170px; }
+
+section.section.section-timeline {
+  max-height: 700px;
+  margin: 0 auto;
+  max-width: 1470px; }
 
 /*======= Media queries (max-width: 1100px) =======*/
 @media screen and (max-width: 1100px) {
