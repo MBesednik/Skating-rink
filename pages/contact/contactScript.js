@@ -64,3 +64,31 @@ window.addEventListener('scroll', function () {
     topLink.classList.remove('show-link');
   }
 });
+
+// Send mail
+const personName = document.getElementById('name');
+const personEmail = document.getElementById('email');
+const personMessage = document.getElementById('message');
+const submitForm = document.getElementsByClassName('form')[0];
+
+submitForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  console.log('Clicked');
+
+  // Email body
+  let eBody = `
+<b>Ime i prezime: </b>${personName.value}
+<br>
+<b>Email: </b>${personEmail.value}
+<br>
+`;
+
+  // Smtpjs
+  Email.send({
+    SecureToken: '13ee4bdb-e917-48d9-9bf4-640026cfb727',
+    To: 'm.besednik69@gmail.com',
+    From: 'm.besednik69@gmail.com',
+    Subject: 'Test',
+    Body: eBody,
+  }).then((message) => alert(message));
+});

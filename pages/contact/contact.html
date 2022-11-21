@@ -21,6 +21,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <!-- SMTPJS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Kontakt</title>
   </head>
   <body>
@@ -97,7 +99,7 @@
         <div class="form__group">
           <textarea
             name=""
-            id="poruka"
+            id="message"
             rows="1"
             class="form__input"
             placeholder="Unesite poruku"
@@ -107,7 +109,13 @@
         </div>
 
         <div class="form__group">
-          <button class="form__btn">Pošalji</button>
+          <input
+            type="submit"
+            name="Pošalji"
+            class="form__btn"
+            id="submitBtn"
+          />
+          <!-- <button class="form__btn" type="">Pošalji</button> -->
         </div>
       </form>
     </section>
