@@ -570,7 +570,7 @@ header .nav-bar-relative {
   text-decoration: none; }
   @media screen and (max-width: 500px) {
     .nav-bar .logo {
-      font-size: 1.2rem;
+      font-size: 1rem;
       letter-spacing: 1.5px; } }
 
 .navigation .nav-items a {
