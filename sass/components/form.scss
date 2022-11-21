@@ -7,9 +7,12 @@
   max-width: 1170px;
   margin: 0 auto;
 
-  h2 {
+  &__title {
     color: #fff;
     margin-bottom: 2.5rem;
+    @media screen and (max-width: 500px) {
+      font-size: 1.5rem;
+    }
   }
   &__group:not(:last-child) {
     margin-bottom: 1rem;
@@ -29,7 +32,9 @@
     @media screen and (max-width: 768px) {
       width: 100%;
     }
-
+    @media screen and (max-width: 500px) {
+      padding: 0.7rem 1rem;
+    }
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(#000, 0.1);

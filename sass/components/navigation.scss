@@ -31,6 +31,10 @@ header .nav-bar-relative {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
+  @media screen and (max-width: 500px) {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+  }
 }
 
 .navigation .nav-items a {

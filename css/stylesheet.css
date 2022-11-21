@@ -140,9 +140,12 @@ ul {
   padding: 2rem;
   max-width: 1170px;
   margin: 0 auto; }
-  .form h2 {
+  .form__title {
     color: #fff;
     margin-bottom: 2.5rem; }
+    @media screen and (max-width: 500px) {
+      .form__title {
+        font-size: 1.5rem; } }
   .form__group:not(:last-child) {
     margin-bottom: 1rem; }
   .form__input {
@@ -160,6 +163,9 @@ ul {
     @media screen and (max-width: 768px) {
       .form__input {
         width: 100%; } }
+    @media screen and (max-width: 500px) {
+      .form__input {
+        padding: 0.7rem 1rem; } }
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -562,6 +568,10 @@ header .nav-bar-relative {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none; }
+  @media screen and (max-width: 500px) {
+    .nav-bar .logo {
+      font-size: 1.2rem;
+      letter-spacing: 1.5px; } }
 
 .navigation .nav-items a {
   color: #fff;
