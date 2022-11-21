@@ -79,7 +79,6 @@ submitForm.addEventListener('submit', (e) => {
   let eBody = `
   <h1>Sadržaj poruke:</h1>
   <br>
-  <br>
   <b>Ime i prezime: </b>${personName.value}
   <br>
   <br>
@@ -98,5 +97,7 @@ submitForm.addEventListener('submit', (e) => {
     From: 'm.besednik69@gmail.com',
     Subject: 'Poruka za Čarobni dječji advent',
     Body: eBody,
-  }).then((message) => alert(message));
+  }).then(alert('Vaša poruka je poslana.'));
+
+  submitForm.reset();
 });
