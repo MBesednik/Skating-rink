@@ -1,0 +1,135 @@
+.form {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: rgba(16, 42, 66, 0.85);
+  text-align: center;
+  padding: 2rem;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 2.5rem;
+  }
+  &__group:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  &__input {
+    font-size: 1.1rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+    text-align: left;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(#000, 0.1);
+      border-bottom: 3px solid #55c57a;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid #ff7730;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #999;
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    text-align: left;
+    color: #fff;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+    text-align: left;
+  }
+
+  &__radio-group {
+    width: 49%;
+    display: inline-block;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 5rem;
+  }
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid #199fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -0.4rem;
+    left: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #199fff;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
+  }
+
+  &__btn {
+    display: inline-flex;
+    font-size: 1rem;
+    background-image: linear-gradient(147deg, #8ed0ff 0%, #199fff 74%);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.02s;
+  }
+  @media screen and (max-width: 576px) {
+    &__btn {
+      width: 100%;
+    }
+  }
+}
