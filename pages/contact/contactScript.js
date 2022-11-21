@@ -77,10 +77,18 @@ submitForm.addEventListener('submit', (e) => {
 
   // Email body
   let eBody = `
-<b>Ime i prezime: </b>${personName.value}
-<br>
-<b>Email: </b>${personEmail.value}
-<br>
+  <h1>Sadržaj poruke:</h1>
+  <br>
+  <br>
+  <b>Ime i prezime: </b>${personName.value}
+  <br>
+  <br>
+  <b>Email: </b>${personEmail.value}
+  <br>
+  <br>
+  <b>Poruka: </b>${personMessage.value}
+  <br>
+  <br>
 `;
 
   // Smtpjs
@@ -88,7 +96,7 @@ submitForm.addEventListener('submit', (e) => {
     SecureToken: '13ee4bdb-e917-48d9-9bf4-640026cfb727',
     To: 'm.besednik69@gmail.com',
     From: 'm.besednik69@gmail.com',
-    Subject: 'Test',
+    Subject: 'Poruka za Čarobni dječji advent',
     Body: eBody,
   }).then((message) => alert(message));
 });
