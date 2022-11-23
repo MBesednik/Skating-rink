@@ -65,7 +65,8 @@ h4 {
   letter-spacing: var(--spacing);
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary); }
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-3); }
 
 h1 {
   font-size: 3rem; }
@@ -81,7 +82,8 @@ h4 {
 
 p {
   letter-spacing: var(--mini-spacing);
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: var(--clr-grey-3); }
 
 ul {
   letter-spacing: var(--mini-spacing);
@@ -896,12 +898,16 @@ header .nav-bar-relative {
   transform: translateY(-50px);
   opacity: 0; }
 
+.swiper-slide .text-content div p {
+  color: var(--white-color); }
+
 .swiper-slide-active .text-content .big-title {
   transform: translateY(0);
   opacity: 1;
   transition: 1s ease;
   transition-delay: 0.3s;
-  transition-property: transform, opacity; }
+  transition-property: transform, opacity;
+  color: var(--white-color); }
 
 .swiper-slide .text-content .big-title span {
   font-size: 0.3em;
@@ -1190,9 +1196,10 @@ header .nav-bar-relative {
     justify-content: center;
     align-items: center; }
     .footer-container h3 {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: var(--white-color); }
     .footer-container a {
-      color: #fff;
+      color: var(--white-color);
       text-decoration: none;
       padding: 0.5rem;
       font-size: 1.2rem; }
@@ -1336,7 +1343,6 @@ section {
   font-weight: 500;
   letter-spacing: normal;
   line-height: 30px;
-  color: #262729;
   margin: 25px 0; }
 
 .service-section__container .row .col p {

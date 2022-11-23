@@ -118,12 +118,17 @@
   opacity: 0;
 }
 
+.swiper-slide .text-content div p {
+  color: var(--white-color);
+}
+
 .swiper-slide-active .text-content .big-title {
   transform: translateY(0);
   opacity: 1;
   transition: 1s ease;
   transition-delay: 0.3s;
   transition-property: transform, opacity;
+  color: var(--white-color);
 }
 
 .swiper-slide .text-content .big-title span {
