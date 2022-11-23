@@ -162,7 +162,7 @@ ul {
     .form__container {
       width: 100%;
       flex-direction: column;
-      padding: 2rem !important; }
+      padding: 2rem 1rem !important; }
       .form__container-location {
         width: 100%; }
         .form__container-location .icons {
@@ -202,7 +202,7 @@ ul {
   padding-bottom: 0.5rem; }
   @media screen and (max-width: 576px) {
     .contact-heading {
-      width: 300px; } }
+      width: 280px; } }
 
 /* section-gallery */
 .section-gallery {
