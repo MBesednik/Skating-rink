@@ -92,10 +92,11 @@ submitForm.addEventListener('submit', (e) => {
 
   // Smtpjs
   Email.send({
-    SecureToken: '7b68b9ac-6a4a-4d4e-a97e-8e3511c10de3',
-    To: 'm.besednik69@gmail.com',
-    From: 'm.besednik69@gmail.com',
-    ReplyTo: document.getElementById('email').value,
+    Host: 'smtp.elasticemail.com',
+    Username: 'marko.vukosav69@gmail.com',
+    Password: 'B3F4BA2CF5028FE9325606A75AFEA720C01A',
+    To: 'marko.vukosav69@gmail.com',
+    From: document.getElementById('email').value,
     Subject: 'Poruka za Čarobni dječji advent',
     Body: eBody,
   }).then((message) => alert(message));
