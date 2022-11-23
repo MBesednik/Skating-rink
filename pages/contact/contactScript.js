@@ -92,7 +92,7 @@ submitForm.addEventListener('submit', (e) => {
 
   // Smtpjs
   Email.send({
-    Host: 'smtp.elasticemail.com',
+    Host: 'smtp.gmail.com',
     Username: 'marko.vukosav69@gmail.com',
     Password: 'B3F4BA2CF5028FE9325606A75AFEA720C01A',
     To: 'marko.vukosav69@gmail.com',
