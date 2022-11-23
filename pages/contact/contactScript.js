@@ -92,12 +92,12 @@ submitForm.addEventListener('submit', (e) => {
 
   // Smtpjs
   Email.send({
-    SecureToken: '13ee4bdb-e917-48d9-9bf4-640026cfb727',
+    SecureToken: '7b68b9ac-6a4a-4d4e-a97e-8e3511c10de3',
     To: 'm.besednik69@gmail.com',
     From: document.getElementById('email').value,
     Subject: 'Poruka za Čarobni dječji advent',
     Body: eBody,
-  }).then(alert('Vaša poruka je poslana.'));
+  }).then((message) => alert(message));
 
   submitForm.reset();
 });
