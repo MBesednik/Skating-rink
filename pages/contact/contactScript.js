@@ -65,41 +65,43 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// Send mail
-const personName = document.getElementById('name');
-const personEmail = document.getElementById('email');
-const personMessage = document.getElementById('message');
-const submitForm = document.getElementsByClassName('form')[0];
+// ********** Neuspješni pokušaj smtpjs-a ************
 
-submitForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  console.log('Clicked');
+// // Send mail
+// const personName = document.getElementById('name');
+// const personEmail = document.getElementById('email');
+// const personMessage = document.getElementById('message');
+// const submitForm = document.getElementsByClassName('form')[0];
 
-  // Email body
-  let eBody = `
-  <h1>Sadržaj poruke:</h1>
-  <br>
-  <b>Ime i prezime: </b>${personName.value}
-  <br>
-  <br>
-  <b>Email: </b>${personEmail.value}
-  <br>
-  <br>
-  <b>Poruka: </b>${personMessage.value}
-  <br>
-  <br>
-`;
+// submitForm.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   console.log('Clicked');
 
-  // Smtpjs
-  Email.send({
-    Host: 'smtp.gmail.com',
-    Username: 'marko.vukosav69@gmail.com',
-    Password: 'B3F4BA2CF5028FE9325606A75AFEA720C01A',
-    To: 'marko.vukosav69@gmail.com',
-    From: document.getElementById('email').value,
-    Subject: 'Poruka za Čarobni dječji advent',
-    Body: eBody,
-  }).then((message) => alert(message));
+//   // Email body
+//   let eBody = `
+//   <h1>Sadržaj poruke:</h1>
+//   <br>
+//   <b>Ime i prezime: </b>${personName.value}
+//   <br>
+//   <br>
+//   <b>Email: </b>${personEmail.value}
+//   <br>
+//   <br>
+//   <b>Poruka: </b>${personMessage.value}
+//   <br>
+//   <br>
+// `;
 
-  submitForm.reset();
-});
+//   // Smtpjs
+//   Email.send({
+//     Host: 'smtp.gmail.com',
+//     Username: 'marko.vukosav69@gmail.com',
+//     Password: 'B3F4BA2CF5028FE9325606A75AFEA720C01A',
+//     To: 'marko.vukosav69@gmail.com',
+//     From: document.getElementById('email').value,
+//     Subject: 'Poruka za Čarobni dječji advent',
+//     Body: eBody,
+//   }).then((message) => alert(message));
+
+//   submitForm.reset();
+// });
