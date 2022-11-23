@@ -94,7 +94,7 @@ submitForm.addEventListener('submit', (e) => {
   Email.send({
     SecureToken: '13ee4bdb-e917-48d9-9bf4-640026cfb727',
     To: 'm.besednik69@gmail.com',
-    From: 'm.besednik69@gmail.com',
+    From: document.getElementById('email').value,
     Subject: 'Poruka za Čarobni dječji advent',
     Body: eBody,
   }).then(alert('Vaša poruka je poslana.'));
