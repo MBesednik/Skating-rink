@@ -94,5 +94,5 @@ class Gallery {
   }
 }
 
-const nature = new Gallery(getElement('.nature'));
-const city = new Gallery(getElement('.city'));
+const gallery = new Gallery(getElement('.gallery'));
+// const city = new Gallery(getElement('.city'));

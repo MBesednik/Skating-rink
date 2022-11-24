@@ -82,8 +82,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 function diplayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (rink) {
-    // console.log(item);
-
     return `<article class="menu-item">
           <img src=${rink.img} alt=${rink.title} class="photo" />
           <div class="rink-info">
@@ -98,7 +96,6 @@ function diplayMenuItems(menuItems) {
         </article>`;
   });
   displayMenu = displayMenu.join('');
-  // console.log(displayMenu);
 
   sectionCenter.innerHTML = displayMenu;
 }
@@ -122,14 +119,11 @@ function displayMenuButtons() {
 
   btnContainer.innerHTML = yearBtns;
   const filterBtns = btnContainer.querySelectorAll('.filter-btn');
-  console.log(filterBtns);
 
   filterBtns.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
-      // console.log(e.currentTarget.dataset);
       const year = e.currentTarget.dataset.id;
       const yearBtn = rinkCard.filter(function (menuItem) {
-        // console.log(menuItem.year);
         if (menuItem.year === year) {
           return menuItem;
         }
