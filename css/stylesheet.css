@@ -351,7 +351,8 @@ Modal
     flex-basis: 24%;
     cursor: pointer; }
   .container__text {
-    padding: 1rem; }
+    padding: 1rem;
+    padding-left: 2rem; }
 
 .small-img {
   width: 125px;
@@ -372,7 +373,8 @@ Modal
         margin-right: 6px; }
     .container__text {
       width: 50%;
-      margin-top: 2rem; } }
+      margin-top: 2rem;
+      padding-left: 1rem; } }
 
 @media screen and (min-width: 785px) {
   .container {
