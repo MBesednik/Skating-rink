@@ -1,5 +1,33 @@
 const rinkCard = [
   {
+    id: 13,
+    title: 'Zimski cajti',
+    year: '2022',
+    img: '../../assets/images/gallery/2022/sv_nedelja_01.jpg',
+    desc: `Zimski cajti uključuju klizalište i ledeni tobogan, bogatu gastro ponudu, dječje olimpijade, školu klizanja by Športići, tematske večeri i koncerte. `,
+  },
+  {
+    id: 12,
+    title: 'Advent u Vrbovcu',
+    year: '2022',
+    img: '../../assets/images/gallery/2022/vrbovec_02.jpg',
+    desc: `Advent u Vrbovcu započeo je 28.11., posjetitelji ovog klizališta uživali su u klizanju i bogatoj ugostiteljskoj ponudi.`,
+  },
+  {
+    id: 11,
+    title: 'Advent u Kninu',
+    year: '2022',
+    img: '../../assets/images/gallery/2022/knin_01.jpg',
+    desc: `Advent u Kninu 2021. godine započeli smo koncertom Nene Belana i besplatnim klizanjem.`,
+  },
+  {
+    id: 10,
+    title: 'Samobor',
+    year: '2022',
+    img: '../../assets/images/gallery/2022/samobor_01.png',
+    desc: `U samom centru Samobora, postavili smo klizalište te posjetiteljima uz klizalište omogućili bogatu gastro ponudu.`,
+  },
+  {
     id: 9,
     title: 'Zimski cajti',
     year: '2021',
